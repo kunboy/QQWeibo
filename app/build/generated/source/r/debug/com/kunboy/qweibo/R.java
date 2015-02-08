@@ -218,9 +218,10 @@ containing a value of this type.
         public static final int activity_main=0x7f030000;
         public static final int activity_userinfo=0x7f030001;
         public static final int activity_welcome=0x7f030002;
-        public static final int fragment_user_info=0x7f030003;
-        public static final int my_card_view=0x7f030004;
-        public static final int my_text_view=0x7f030005;
+        public static final int fragment_main=0x7f030003;
+        public static final int fragment_user_info=0x7f030004;
+        public static final int my_card_view=0x7f030005;
+        public static final int my_text_view=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
