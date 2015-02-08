@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_info_bg">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/account_user_detail_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:id="@+id/inf_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:longClickable="true"
+            android:background="?android:selectableItemBackground"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/info_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/info_text_spacing"
+                android:layout_marginRight="@dimen/info_text_spacing"
+                android:layout_marginTop="@dimen/info_text_spacing"
+                android:gravity="center"
+                android:text="kunboy"
+                android:textColor="@color/info_text_normal"
+                android:textSize="@dimen/info_text_size_middle"></TextView>
+
+            <TextView
+                android:id="@+id/info_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/info_text_spacing"
+                android:layout_marginRight="@dimen/info_text_spacing"
+                android:layout_marginTop="@dimen/info_text_spacing"
+                android:layout_toRightOf="@id/info_nick"
+                android:text="Lv 3"
+                android:textColor="@color/info_text_normal"
+                android:textSize="@dimen/info_text_size_middle" />
+
+            <TextView
+                android:id="@+id/info_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/info_nick"
+                android:layout_margin="@dimen/info_text_spacing"
+                android:text="中国 四川 成都"
+                android:textColor="@color/info_text_normal"
+                android:textSize="@dimen/info_text_size_middle" />
+
+            <ImageView
+                android:id="@+id/info_img_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/info_text_spacing"
+                android:src="@drawable/account_info_edit" />
+
+            <TextView
+                android:id="@+id/info_text_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/info_img_edit"
+                android:text="@string/info_edit"
+                android:textColor="@color/info_text_normal"
+                android:textSize="@dimen/info_text_size_big" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

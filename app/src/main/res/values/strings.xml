@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QWeibo</string>
+    <string name="no_network_connection_toast">无网络链接</string>
+    <string name="welcome">欢迎</string>
+
+</resources>
